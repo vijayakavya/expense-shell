@@ -7,7 +7,7 @@ if [ $? -eq 0 ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILED\e[0m"
-  exit
+  exit 1
 fi
 
 echo install NodeJS
@@ -16,7 +16,7 @@ if [ $? -eq 0 ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILED\e[0m"
-  exit
+  exit 1
 fi
 
 echo Copy Backend Service File
@@ -25,7 +25,7 @@ if [ $? -eq 0 ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILED\e[0m"
-  exit
+  exit 1
 fi
 
 echo Add Application User
@@ -34,7 +34,7 @@ if [ $? -eq 0 ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILED\e[0m"
-  exit
+  exit 1
 fi
 
 echo Clean App Content
@@ -43,7 +43,7 @@ if [ $? -eq 0 ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILED\e[0m"
-  exit
+  exit 1
 fi
 
 mkdir /app
