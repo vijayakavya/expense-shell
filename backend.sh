@@ -5,7 +5,7 @@ echo Install NodeJS Repos
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>$log_file
 stat_check()
 
-echo install NodeJS
+echo Install NodeJS
 dnf install nodejs -y &>>$log_file
 stat_check()
 
